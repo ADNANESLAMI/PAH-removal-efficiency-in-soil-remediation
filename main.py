@@ -43,8 +43,8 @@ X= pd.DataFrame({'Time':  [ Time_value],
                 'Sand':  [Sand_value],
                 'Silt': [Silt_value],
                 'Clay':   [Clay_value],
-                })
-pd.Index(X.index, dtype='int64')
+                },dtype='int64')
+
 
 
 
@@ -70,7 +70,7 @@ X= pd.DataFrame({'Time':   [Time_value],
                 'Sand':  [Sand_value],
                 'Silt': [Silt_value],
                 'Clay':   [Clay_value],
-                })
+                },dtype='int64')
 pd.Index(X.index, dtype='int64')
 
 PHE_pred_XGBR = XGBR_PHE.predict(X).round(2)
